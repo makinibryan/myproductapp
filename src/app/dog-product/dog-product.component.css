@@ -1,0 +1,361 @@
+.main-container {
+  font-family: Arial, sans-serif;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.features-section {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.subheading {
+  font-weight: normal;
+  color: #555;
+}
+
+.features-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+}
+
+.feature h4 {
+  margin: 0;
+
+}
+
+.feature p {
+  margin-top: 5px;
+  color: #666;
+  font-size: 14px;
+}
+
+.center-image {
+  width: 220px;
+  height: 220px;
+  margin: 0 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #eee;
+}
+
+.icon-wrapper{
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+
+
+.cta-button {
+  margin-top: 30px;
+  padding: 12px 24px;
+  background-color: #EE6F4B;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+
+.payment-section {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.cta-button-large {
+  display: inline-block;
+  background-color: #EE6F4B;
+  color: white;
+  padding: 12px 40px;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  cursor: pointer;
+  gap: 10px;
+  width: 462px;
+
+
+}
+
+.payment-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.guarantee {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.guarantee img {
+  width: 20px;
+}
+
+.payment-icons img {
+  height: 30px;
+  margin: 0 5px;
+}
+
+.nutrition-section {
+  display: flex;
+  align-items: center;
+
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.nutrition-text {
+  flex: 1;
+  max-width: 570px;
+}
+
+.nutrition-text h2 {
+  margin-bottom: 10px;
+}
+
+.nutrition-text p {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+
+
+.key-points {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.key-points h4{
+  font-weight: 600;
+  font-size: 19px;
+}
+.key-points li {
+  margin-bottom: 24px;
+}
+
+.point {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 25px;
+}
+
+.percentage {
+  font-size: 36px;
+  font-weight: bold;
+  color: #EE6F4B;
+  line-height: 1;
+  min-width: 60px;
+}
+
+.point p {
+  margin: 0;
+  font-size: 15px;
+  color: #555;
+  line-height: 1.5;
+  flex: 1;
+}
+
+.nutrition-image img {
+  height: 570px;
+  width: 570px;
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+
+.gut-health-section {
+  margin-top: 60px;
+  padding: 0 20px;
+}
+
+.gut-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+}
+
+.gut-row.reverse {
+  flex-direction: row-reverse;
+}
+
+.gut-image img {
+  height: 480px;
+  width: 470px;
+  max-width: 400px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.gut-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.gut-text h3 {
+  font-size: 22px;
+  color: #222;
+  margin-bottom: 12px;
+}
+
+.gut-text p {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.6;
+}
+
+h2{
+  font-weight: 700;
+  font-size: 40px;
+  letter-spacing: 0.25px;
+}
+
+
+
+.gut-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "image text";
+  align-items: center;
+  gap: 40px;
+}
+
+.gut-grid.reverse {
+  grid-template-areas: "text image";
+}
+
+.gut-image {
+  grid-area: image;
+}
+
+.text-content {
+  text-align: left;
+}
+
+.feature {
+  display: flex;
+  gap: 12px;
+}
+
+.feature .icon {
+  width: 40px;
+  height: 40px;
+  margin-top: 4px;
+  flex-shrink: 0;
+}
+
+
+
+.feature-text p {
+  margin: 4px 0 0;
+
+  font-size: 14px;
+}
+
+/* this is css styling for smaller screens */
+
+@media (max-width: 768px) {
+  .main-container {
+    padding: 20px 10px;
+  }
+
+  .features-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .center-image {
+    margin: 30px 0;
+  }
+
+  .nutrition-section,
+  .gut-row,
+  .gut-grid {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  .nutrition-image img,
+  .gut-image img {
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .nutrition-text,
+  .gut-text {
+    max-width: 100%;
+  }
+
+  .payment-row {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .cta-button-large {
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  .percentage {
+    font-size: 28px;
+    min-width: 50px;
+  }
+
+  .features-list {
+    max-width: 100%;
+    align-items: center;
+  }
+
+  .feature {
+    justify-content: center;
+    text-align: left;
+  }
+
+  .gut-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "image"
+      "text";
+  }
+
+  .gut-grid.reverse {
+    grid-template-areas:
+      "text"
+      "image";
+  }
+}
